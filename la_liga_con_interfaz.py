@@ -1,4 +1,4 @@
-# simulador_laliga_gui_final.py
+
 
 import random
 import math
@@ -11,7 +11,7 @@ from tkinter.scrolledtext import ScrolledText
 import csv
 from tqdm import tqdm
 
-# ─── PARTE DE DATOS ─────────────────────────────────────────────────
+
 clasificacion_actual = {
     "Barcelona": 76, "Real Madrid": 72, "Atlético de Madrid": 66,
     "Athletic Club": 60, "Real Betis": 54, "Villarreal": 52,
@@ -97,7 +97,7 @@ def simular_liga():
         simular_jornada(jornadas[j], puntos, elo)
     return puntos
 
-# ─── FUNCIÓN DE SIMULACIÓN COMPLETA ────────────────────────────────
+# ─── SIMULACIÓN COMPLETA ────────────────────────────────
 def run_simulacion():
     try:
         N = int(entry_nsim.get())
@@ -157,7 +157,7 @@ def run_simulacion():
     text_resultados.delete(1.0, "end")
     text_resultados.insert("end", salida)
 
-# ─── FUNCIÓN GUARDAR CSV ─────────────────────────────────────────────
+# ───GUARDAR CSV ─────────────────────────────────────────────
 def guardar_resultados():
     fichero = filedialog.asksaveasfilename(defaultextension=".csv", filetypes=[("CSV files", "*.csv")])
     if fichero:
