@@ -127,7 +127,7 @@ def run_simulacion():
         for team, _ in tabla[-3:]:
             descenso[team] += 1
         
-        puntos_descenso.append(tabla[-3][1])
+        puntos_descenso.append(tabla[-4][1])
     
     salida = f"Simulaciones realizadas: {N}\n"
     salida += "\n───────────── CAMPEONES ─────────────\n"
